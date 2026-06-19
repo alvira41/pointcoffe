@@ -9,7 +9,7 @@ export default function NavBar() {
          </nav>
         <ul className="hidden md:flex gap-4 items-center text-sm ml-38.6 mr-50">
           <li><a href="#about" className="text-white hover:font-bold font-sans text-lg">About Us</a></li>
-          <li><a href="#menu" className="text-white hover:font-bold font-sans text-lg">Menu</a></li>
+          <li><a href="#menu" className="text-white hover:font-bold font-sans text-lg">MenU</a></li>
           <li><a href="#promotions" className="text-white hover:font-bold font-sans text-lg">Promotions</a></li>
           <li><a href="#articles" className="text-white hover:font-bold font-sans text-lg">Articles</a></li>
           <li><a href="#mebership" className="text-white hover:font-bold font-sans text-lg">Membership</a></li>
