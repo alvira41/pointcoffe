@@ -1,50 +1,61 @@
 export default function Hero() {
   return (
-    <section>
-   
-      <div className="aspect-w-16 aspect-h-9">
-       <iframe
-         src="https://www.youtube.com/embed/XobKsZAPBIk?autoplay=1&mute=1&loop=1&playlist=XobKsZAPBIk"
-         title="Point Coffee Video"
-         className="w-full h-full"
-         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-         allowFullScreen
-        />
-      </div>
-      <div className="bg-black/40">
-        <section className="flex flex-col md:flex-row items-center justify-center gap-8 px-10 py-10 bg-gray-300" id="about"
-          style={{ backgroundImage: "url('/bg.png')" }}
-        >
+    <section
+      id="about"
+      className="relative min-h-screen overflow-hidden pt-9"
+      style={{
+        backgroundImage: "url('/bg.png')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
+    >
+      {/* Dark Overlay */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-[#160129]/80 to-black/90" />
 
-          <div className="w-full md:w-1/2 text-gray-900 flex-col">
-            <h2 className="text-6xl font-semibold mb-4 font-poppins">
-              Crafted with passion, brewed with precision.
-            </h2>
-            <p className="text-lg text-gray-500 pt-10 pb-10">
-              Point Coffee merupakan brand spesialisasi kopi dengan konsep “Made
-              to Order” yang menyajikan Fresh Quality Coffee. Dengan menggunakan
-              100% biji kopi asli Indonesia yang disajikan oleh barista terlatih
-              dengan mesin kopi standar internasional. Berdiri sejak tahun 2016,
-              dan kini sudah hadir tersedia di lebih dari 1.200 outlet di seluruh
-              Indonesia untuk mempermudah Point People menjangkau Point Coffee.
-            </p>
+      {/* Glow Effect */}
+      <div className="absolute top-20 left-10 h-72 w-72 rounded-full bg-purple-900/20 blur-3xl" />
+      <div className="absolute bottom-20 right-10 h-72 w-72 rounded-full bg-fuchsia-900/20 blur-3xl" />
+
+      <div className="relative z-10 max-w-7xl mx-auto px-8 py-24 flex items-center min-h-screen">
+
+        <div className="max-w-3xl">
+
+          <p className="uppercase tracking-[0.4em] text-purple-300 mb-4">
+            Anime Universe
+          </p>
+
+          <h1 className="text-5xl md:text-7xl font-light leading-tight text-white mb-8">
+            Explore the world
+            <br />
+            of <span className="text-purple-300">Anime Stories</span>
+          </h1>
+
+          <p className="text-lg md:text-xl leading-9 text-purple-100/80 max-w-2xl">
+            NimeGami menghadirkan sinopsis lengkap, karakter ikonik,
+            galeri visual berkualitas tinggi, dan cuplikan adegan terbaik
+            dari berbagai anime populer. Temukan petualangan baru,
+            pertarungan epik, dan cerita yang tak terlupakan dalam satu
+            platform.
+          </p>
+
+          <div className="flex gap-4 mt-10">
             <a
-            href="#about"
-            className="px-14 py-3 bg-green-700 text-white font-bold rounded-md font-medium w-fit h-full"
-          >
-             Lihat Selengkapnya
-          </a>
-          </div>
-          
-          <div className="w-full md:w-1/2 pt-8">
-            <img
-              src="pcone.png"
-              alt="pcone"
-              className="rounded-lg shadow-lg ml-3 w-90 h-auto"
-            />
+              href="#menu"
+              className="px-8 py-4 rounded-full bg-[#25012B] border border-purple-400 text-white hover:scale-105 duration-300"
+            >
+              Explore Anime
+            </a>
+
+            <a
+              href="#faq"
+              className="px-8 py-4 rounded-full border border-white/30 text-purple-100 hover:bg-white/10 duration-300"
+            >
+              Learn More
+            </a>
           </div>
 
-        </section>
+        </div>
+
       </div>
     </section>
   );
